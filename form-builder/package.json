@@ -2,11 +2,12 @@
   "name": "form-builder",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
-  "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
-  "dev:client": "cd client && npm run dev",
-  "dev:server": "ts-node server/index.ts"
-},
+  "scripts": {
+    "dev:react": "npm --prefix client run dev",
+    "dev:vue": "concurrently \"npm run dev:server\" \"npm --prefix client-vue run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:react\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
