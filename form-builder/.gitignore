@@ -1,0 +1,28 @@
+# Node modules (both client and server)
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js build output
+.next/
+
+# Build output (if you have any custom build folders)
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Mac system files (since you’re on Mac)
+.DS_Store
+
+# Optional: IDE/editor stuff (adjust if you use a different editor)
+.vscode/
+.idea/
