@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es6",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "outDir": "./dist"
+  }
+}

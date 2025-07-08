@@ -1,0 +1,20 @@
+{
+  "name": "form-builder",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+  "dev:client": "cd client && npm run dev",
+  "dev:server": "ts-node server/index.ts"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "concurrently": "^9.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
